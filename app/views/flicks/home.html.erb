@@ -1,0 +1,23 @@
+<h1>Flickr</h1>
+
+<div>
+    <h2>Enter a flickr account</h2>
+    <%= form_with url: flicks_home_path, local: true, method: :get do |form| %>
+    <%= form.label "Flickr ID:" %>
+    <%= form.text_field :flickr_id %>
+    <%= form.submit "Search" %>
+<% end %>
+<br>
+    
+    <% if params[:flickr_id] %>
+    
+        <h3 class="title is-5"> Photo search result: </h3>
+            <% @photos.each do |photo| %>
+            <ul>
+              <li>
+                <img src="<%=Flickr.url(photo) %>"  />
+              </li>
+            </ul>
+            <% end %>
+    <% end %>
+</div>
