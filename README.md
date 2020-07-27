@@ -1,12 +1,12 @@
 # Flickr Scraper
 
-> This is the API project of Odin Curriculum for learning purposes. It makes use of Flickr API to fetch users uploaded photos.
+> This is the API project of Odin Curriculum for learning purposes. It makes use of Flickr API to fetch users' uploaded photos.
 
--In this project I used Flickr API to fetch Flicker Users images,
+-In this project I used Flickr API to fetch Flicker Users' images,
 
 -To keep API key and secret I used figaro gem,
 
--To interact with Flickr API, I used flickr gem
+-To interact with Flickr API, I used flickr gem.
 
 ## Built With
 
@@ -33,7 +33,7 @@
 -Get your API key and secret.
 
 -run
->bundle exec figaro install
+>bundle exec figaro install (disregard gitignore warning)
 
 - This creates a commented config/application.yml file and adds it to your .gitignore. Add your own configuration to this file;
 
